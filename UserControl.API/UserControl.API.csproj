@@ -15,4 +15,8 @@
       <Folder Include="Controllers" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\UserControl.Bll\UserControl.Bll.csproj" />
+    </ItemGroup>
+
 </Project>
