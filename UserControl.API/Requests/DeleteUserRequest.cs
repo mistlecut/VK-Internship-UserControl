@@ -1,3 +1,3 @@
 namespace UserControl.API.Requests;
 
-public record DeleteUserRequest(int UserId);
+public record DeleteUserRequest(long UserId);

@@ -6,7 +6,7 @@ public interface IUserControlService
 {
     Task AddUser(UserModel user);
 
-    Task DeleteUser(int userId);
+    Task DeleteUser(long userId);
 
-    Task<UserModel[]> GetUsers(int[] usersIds);
+    Task<UserModel[]> GetUsers(long[] usersIds);
 }

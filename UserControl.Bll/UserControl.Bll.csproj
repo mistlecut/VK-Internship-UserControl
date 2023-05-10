@@ -6,4 +6,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\UserControl.Dal\UserControl.Dal.csproj" />
+    </ItemGroup>
+
 </Project>

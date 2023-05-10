@@ -10,12 +10,12 @@ public class UserControlService : IUserControlService
         throw new NotImplementedException();
     }
 
-    public Task DeleteUser(int userId)
+    public Task DeleteUser(long userId)
     {
         throw new NotImplementedException();
     }
 
-    public Task<UserModel[]> GetUsers(int[] usersIds)
+    public Task<UserModel[]> GetUsers(long[] usersIds)
     {
         throw new NotImplementedException();
     }

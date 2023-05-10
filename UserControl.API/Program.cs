@@ -1,5 +1,7 @@
+using Microsoft.EntityFrameworkCore;
 using UserControl.Bll.Services;
 using UserControl.Bll.Services.Interfaces;
+using UserControl.Dal;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IUserControlService, UserControlService>();
+builder.Services.AddDbContext<DataContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
 
 var app = builder.Build();
 

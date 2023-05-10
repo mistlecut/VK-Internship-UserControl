@@ -1,13 +1,13 @@
 namespace UserControl.Bll.Models;
 
 public record UserInfoModel(
-    int UserId,
+    long UserId,
     string Login,
     string Password,
     DateTime CreationDate,
-    int GroupId,
+    long GroupId,
     string GroupCode,
     string GroupDescription,
-    int StateId,
+    long StateId,
     string StateCode,
     string StateDescription);
